@@ -1,16 +1,9 @@
 import { useEffect, useState } from "react";
-<<<<<<< HEAD
-import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
-export default function NoticiasScreen() {
-
-=======
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 export default function NoticiasScreen() {
 
     // Criamos uma variável em React 
->>>>>>> d14f4df2d969fa46c01b68308f11e133c7381f11
     const [noticias, setNoticias] = useState([]);
 
     // Ele é responsável por verificar se o componente 
@@ -31,21 +24,6 @@ export default function NoticiasScreen() {
     return (
         <Container>
             <h1>Notícias</h1>
-<<<<<<< HEAD
-            {
-                noticias.map(
-                    function (noticias, indice) {
-                        return (
-                            <Container key={indice}>
-                                <h1>{noticias.title}</h1>
-                                <p>{noticias.body.substring(0, 50)}...</p>
-                                <Link to={'/noticias/' + noticias.id}>Leia mais</Link>
-                            </Container>
-                        )
-                    }
-                )
-            }
-=======
             <Container>
                 <Row>
                     {
@@ -74,7 +52,6 @@ export default function NoticiasScreen() {
                     }
                 </Row>
             </Container>
->>>>>>> d14f4df2d969fa46c01b68308f11e133c7381f11
         </Container>
     )
 }

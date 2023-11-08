@@ -1,4 +1,3 @@
-HEAD
 import { useState } from "react";
 import {
   Alert,
@@ -10,7 +9,6 @@ import {
   Row,
 } from "react-bootstrap";
 
- d14f4df2d969fa46c01b68308f11e133c7381f11
 export default function ContatoScreen() {
   const [nome, setNome] = useState();
   const [email, setEmail] = useState();
